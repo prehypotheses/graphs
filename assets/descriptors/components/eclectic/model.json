@@ -1,0 +1,32 @@
+{
+    "details": [
+        {
+            "section": "type",
+            "description": "Token Classification Model"
+        },
+        {
+            "section": "task",
+            "description": "The classification of word pieces, strings."
+        },
+        {
+            "section": "architecture",
+            "description": "The underlying architecture is Text-to-Text Transfer Transformer (T5), a Transformer model.  <ul><li>The <a href='https://github.com/prehypotheses/t5'>t5</a> repository is the <a href='https://www.tensorflow.org/tutorials/images/transfer_learning'>transfer learning</a> repository.  The <a href='https://github.com/prehypotheses/configurations'>configurations</a> repository hosts the training <b>(a)</b> <a href='https://github.com/prehypotheses/configurations/blob/master/data/architecture/t5/arguments.json'>arguments</a>, and <b>(b)</b> <a href='https://github.com/prehypotheses/configurations/blob/master/data/architecture/t5/hyperspace.json'>hyperparameters search spaces</a>, settings.</li><li>The raw <b>t5</b> architecture source is <a href='https://huggingface.co/docs/transformers/model_doc/t5'>huggingface.co</a>; <a href='https://huggingface.co/google-t5/t5-small'>in-depth t5 details</a>.</li><li>The paper is <a href='https://arxiv.org/abs/1910.10683'>Exploring the Limits of Transfer Learning with a Unified Text-to-Text Transformer</a>.</li></ul>"
+        },
+        {
+            "section": "performance",
+            "description": "<a href='../src/c-eclectic-metrics-error-false.html'>False Rates</a>, Business Metrics, <a href='../src/c-eclectic-metrics-error-scores.html'>Error Metrics</a>"
+        },
+        {
+            "section": "dataset",
+            "description": "<a>Visit the <a href='../src/c-eclectic-data-desc.html'>brief data details</a> page.</a>"
+        },
+        {
+            "section": "input",
+            "description": "Free text, e.g., <br><img src='../assets/img/c-eclectic-app-input.png' alt='input' width='531px'/><br>Text source: <a href='https://en.wikipedia.org/wiki/Musée_Rodin'>Wikipedia: Musée Rodin</a>"
+        },
+        {
+            "section": "output",
+            "description": "The output consists of classifiable word-pieces, alongside their classifications and classification scores.  The raw output is a <abbr title='JavaScript Object Notation'>JSON</abbr> string, e.g.,<br><br><img src='../assets/img/c-eclectic-app-output.png' alt='input' width='356px'/><br><br>A rendered option is<br><img src='../assets/img/c-eclectic-app-output-rendered.png' alt='input' width='368px' height='303px'/><br><br>"
+        }
+    ]
+}
