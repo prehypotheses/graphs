@@ -139,3 +139,8 @@ vite.config.ts.timestamp-*
 
 # IntellJ IDEA
 .idea
+
+
+# Exclude
+script.sh
+
