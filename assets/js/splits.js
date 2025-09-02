@@ -1,9 +1,7 @@
 
 $.getJSON('../../warehouse/numerics/abstracts/tree.json', function (data) {
 
-
-
-    Highcharts.chart('container', {
+    Highcharts.chart('container0009', {
         series: [{
             name: 'Splits',
             type: 'treemap',
@@ -48,12 +46,15 @@ $.getJSON('../../warehouse/numerics/abstracts/tree.json', function (data) {
             data: data
         }],
         subtitle: {
-            text: 'Click points to drill down; <a href="https://github.com/prehypotheses/numerics/graphs/assets/js/splits.js">code</a>.',
+            text: 'To focus on the breakdown of a split, click; <a href="https://github.com/prehypotheses/numerics/graphs/assets/js/splits.js">code</a>.',
             align: 'left'
         },
         title: {
-            text: 'The training, validating, testing split.',
+            text: 'The training, validation, and testing splits.',
             align: 'left'
+        },
+        credits: {
+            enabled: false
         },
         tooltip: {
             useHTML: true,
@@ -65,5 +66,5 @@ $.getJSON('../../warehouse/numerics/abstracts/tree.json', function (data) {
 
 }).fail(function () {
     console.log("Missing");
-    $('#container').empty();
+    $('#container0009').empty();
 });
