@@ -10,7 +10,7 @@
     },
     {
       "section": "brief description",
-      "note": "The raw data is a set of bulletins written in English.  Each instance of the data <a href='https://huggingface.co/datasets/DFKI-SLT/few-nerd?json-viewer=66' target='_blank'>consists of a sequence of tokens, a sequence of coarse grain tags/classes, and a sequence of fine grain tags/classes</a>.  The tags, i.e., classes, are discussed within the <a href='c-eclectic-data-profiles.html'>data profile</a> page.<br><br>For a history of this data, including its collection and tagging, read<ul><li>The <a href='https://arxiv.org/abs/2105.07464'>underlying paper</a>; the <a href='https://ningding97.github.io/fewnerd' target='_blank'>accompanying data notes</a>.</li><li><a href='https://huggingface.co/datasets/DFKI-SLT/few-nerd#dataset-card-for-few-nerd' target='_blank'>The data card.</a></li></ul>"
+      "note": "The raw data is a set of bulletins written in English.  Each instance of the data <a href='https://huggingface.co/datasets/DFKI-SLT/few-nerd?json-viewer=66' target='_blank'>consists of a sequence of tokens, a sequence of coarse grain tags/classes, and a sequence of fine grain tags/classes</a>.  Tags, i.e., classes, are briefly outlined within the <a href='c-eclectic-data-profiles.html'>data profile</a> page.<br><br>For a history of this data, including its collection and tagging, read<ul><li>The <a href='https://arxiv.org/abs/2105.07464'>underlying paper</a>; the <a href='https://ningding97.github.io/fewnerd' target='_blank'>accompanying data notes</a>.</li><li><a href='https://huggingface.co/datasets/DFKI-SLT/few-nerd#dataset-card-for-few-nerd' target='_blank'>The data card.</a></li></ul>"
     },
     {
       "section": "raw data access",
