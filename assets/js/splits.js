@@ -1,5 +1,5 @@
 
-$.getJSON('../../warehouse/numerics/abstracts/tree.json', function (data) {
+$.getJSON('../../warehouse/metrics/abstracts/tree.json', function (data) {
 
     Highcharts.chart('container0009', {
         series: [{
@@ -46,7 +46,7 @@ $.getJSON('../../warehouse/numerics/abstracts/tree.json', function (data) {
             data: data
         }],
         subtitle: {
-            text: 'To focus on the breakdown of a split, click; <a href="https://github.com/prehypotheses/numerics/graphs/assets/js/splits.js">code</a>.',
+            text: 'To focus on the breakdown of a split, click; <a href="https://github.com/prehypotheses/metrics/graphs/assets/js/splits.js">code</a>.',
             align: 'left'
         },
         title: {
