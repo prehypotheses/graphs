@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en" class="light-style layout-menu-fixed" dir="ltr" data-theme="theme-default"
-      data-assets-path="../assets/" data-template="vertical-menu-template-free">
+      data-assets-path="/assets/" data-template="vertical-menu-template-free">
 
   <head>
     <meta charset="utf-8" />
@@ -12,7 +12,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/automata.png" />
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon/automata.png" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,12 +20,12 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" />
 
     <!-- Core CSS -->
-	  <link rel="stylesheet" href="../assets/fonts/boxicons.css" />
-    <link rel="stylesheet" href="../assets/css/libraries/core.css" class="template-customizer-core-css" />
-    <link rel="stylesheet" href="../assets/css/libraries/theme-default.css" class="template-customizer-theme-css" />
-    <link rel="stylesheet" href="../assets/css/libraries/demo.css" />
-    <link rel="stylesheet" href="../assets/css/libraries/tables.css" />
-    <link rel="stylesheet" href="../assets/css/libraries/applications.css">
+	  <link rel="stylesheet" href="/assets/fonts/boxicons.css" />
+    <link rel="stylesheet" href="/assets/css/libraries/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="/assets/css/libraries/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="/assets/css/libraries/demo.css" />
+    <link rel="stylesheet" href="/assets/css/libraries/tables.css" />
+    <link rel="stylesheet" href="/assets/css/libraries/applications.css">
 
   <!-- Vendors CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.6/css/perfect-scrollbar.min.css"
@@ -33,9 +33,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Helpers -->
-  <script src="../assets/js/libraries/helpers.js"></script>
-  <script src="../assets/js/libraries/menu.js"></script>
-	<script src="../assets/js/libraries/latex.js" async></script>
+  <script src="/assets/js/libraries/helpers.js"></script>
+  <script src="/assets/js/libraries/menu.js"></script>
+	<script src="/assets/js/libraries/latex.js" async></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
           integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -48,7 +48,7 @@
     <!--  Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section
           ? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option
           in this file.  -->
-    <script src="../assets/js/libraries/config.js"></script>
+    <script src="/assets/js/libraries/config.js"></script>
   </head>
 
   <body>
@@ -113,10 +113,6 @@
 			                  <i class="bx bx-network-chart me-1"></i> Error Metrics: Scores</a>
 	                  </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="c-eclectic-metrics-cost.html">
-                        <i class="bx bx-network-chart me-1"></i> Cost Metrics</a>
-                    </li>
-                    <li class="nav-item">
                       <a class="nav-link" href="c-eclectic-model-desc.html">
                         <i class="bx bxs-info-circle me-1"></i> Model Description</a>
                     </li>
@@ -137,7 +133,7 @@
                       </colgroup>
                       <tr><td>
 	                      <p>An illustrative interactive interface; the interface software allows for advanced interfaces.
-                          The classes are art, building, event, location, organisation, and product-weapon.  You may notice some odd classifications, or mis-classifications; such errors underline <b>(a)</b> the import of data timeliness, and <b>(b)</b> the impact of raw/training data errors/mis-classifications.</p>
+                          The classes are <b>art</b>, <b>building</b>, <b>event</b>, <b>geo-political entity</b>, <b>organisation</b>, and <b>weapon</b>.  You may notice some odd classifications, or mis-classifications; such errors underline <b>(a)</b> the import of data timeliness, and <b>(b)</b> the impact of raw/training data errors/mis-classifications.</p>
                       </td></tr>
                       <tr><td>
                         <div class="model svelte-v88i0k">
@@ -145,6 +141,16 @@
                              onclick="window.open('https://greyhypotheses-detecting-eclectic.hf.space', 'newwindow', 'width=1199 5,height=690'); return false;">
                             <div class="button svelte-v88i0k" style="background-color: #141C2E;">LAUNCH</div></a>
                         </div><br><br>
+                      </td></tr>
+                      <tr><td>
+                        <b>For quick explorations</b>, select one of the provided pieces of text.  An <b>annotated image</b> of the lower section of the interface is displayed <b>below</b><br>
+                        <ul style="margin-top: 15px;">
+                          <li>Select a page; this selects a text piece.</li>
+                          <li>Click on the text of a page.</li>
+                          <li>Click submit.</li>
+                        </ul>
+                        <br>
+                        <img src="/assets/img/interface.png">
                       </td></tr>
                     </table>
                   </div>
@@ -160,7 +166,7 @@
             <footer class="content-footer footer bg-footer-theme">
               <div class="container-xxl d-flex flex-wrap justify-content-between py-2 flex-md-row flex-column">
                 <div class="mb-2 mb-md-0">
-                  Mathematics / Artificial Intelligence / Machine Learning<br>
+                  Mathematics / Machine Learning<br>
                   <b>
                     <script>
                       document.write(new Date().getFullYear());
@@ -205,7 +211,7 @@
     <!-- end build -->
 
     <!-- Main JS -->
-    <script src="../assets/js/libraries/main.js"></script>
+    <script src="/assets/js/libraries/main.js"></script>
 
     <!-- Place this tag in your head or just before your close body tag. -->
     <script async defer src="https://buttons.github.io/buttons.js"></script>

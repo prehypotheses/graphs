@@ -74,7 +74,7 @@ function generateChart(fileNameKey) {
             chart: {
                 polar: true,
                 type: 'spline',
-                marginTop: 105
+                marginTop: 65
             },
 
             title: {
@@ -115,11 +115,9 @@ function generateChart(fileNameKey) {
                 verticalAlign: 'bottom',
                 layout: 'vertical',
                 width: '57.5%',
-                margin: 25,
+                margin: 5,
                 itemMarginTop: 2,
-                itemMarginBottom: 2,
-                y: 25,
-                x: 25
+                itemMarginBottom: 2
             },
 
             // https://api.highcharts.com/highcharts/pane
