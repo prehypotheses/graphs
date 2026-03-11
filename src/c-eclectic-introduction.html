@@ -21,12 +21,13 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"/>
 
   <!-- Icons. Uncomment required icon fonts -->
-  <link rel="stylesheet" href="../assets/fonts/boxicons.css" />
+  <link rel="stylesheet" href="/assets/fonts/boxicons.css" />
 
   <!-- Core CSS -->
-  <link rel="stylesheet" href="../assets/css/libraries/core.css" class="template-customizer-core-css" />
-  <link rel="stylesheet" href="../assets/css/libraries/theme-default.css" class="template-customizer-theme-css" />
-  <link rel="stylesheet" href="../assets/css/libraries/demo.css" />
+  <link rel="stylesheet" href="/assets/css/libraries/core.css" class="template-customizer-core-css" />
+  <link rel="stylesheet" href="/assets/css/libraries/theme-default.css" class="template-customizer-theme-css" />
+  <link rel="stylesheet" href="/assets/css/libraries/demo.css" />
+
 
   <!-- Vendors CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/perfect-scrollbar/1.5.6/css/perfect-scrollbar.min.css"
@@ -34,9 +35,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <!-- Helpers -->
-  <script src="../assets/js/libraries/helpers.js"></script>
-  <script src="../assets/js/libraries/menu.js"></script>
-  <script src="../assets/js/libraries/latex.js" async></script>
+  <script src="/assets/js/libraries/helpers.js"></script>
+  <script src="/assets/js/libraries/menu.js"></script>
+  <script src="/assets/js/libraries/latex.js" async></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
           integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -49,7 +50,14 @@
   <!--  Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section
         ? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option
         in this file.  -->
-  <script src="../assets/js/libraries/config.js"></script>
+  <script src="/assets/js/libraries/config.js"></script>
+
+  <style>
+      abbr:hover::after {
+          border: white;
+      }
+  </style>
+
 </head>
 
 <body>
@@ -64,7 +72,7 @@
 
       <ul id="sections" class='menu-inner py-1'>
         <script>
-          $.getJSON("../assets/descriptors/aside.json", function(data) {
+          $.getJSON("/assets/descriptors/aside.json", function(data) {
             var cells = "",
               elements = document.getElementById('sections');
             $.each(data.content, function(k, l){
@@ -98,7 +106,7 @@
                     <div class="card-body">
                       <h5 class="card-title text-primary">Fine-tuning a large language model for a token classification task.</h5>
                       <p class="mb-4">
-                        This hub outlines aspects of a 2025 information extraction investigation; it follows on from an earlier fine-tuning investigation of <a title="Bidirectional Encoder Representations from Transformers" href="https://arxiv.org/abs/1810.04805" target="_blank">BERT</a> & <a href="https://arxiv.org/abs/1910.01108">DistilBERT</a> large language model architectures, for information extraction.<br><br>
+                        This hub outlines aspects of a 2025 information extraction <abbr title="An investigation by a Scottish Government data science team; it was part of a unit that does not exist any more.">investigation</abbr>; it follows on from an earlier fine-tuning investigation of <a title="Bidirectional Encoder Representations from Transformers" href="https://arxiv.org/abs/1810.04805" target="_blank">BERT</a> & <a href="https://arxiv.org/abs/1910.01108">DistilBERT</a> large language model architectures, for information extraction.<br><br>
 
                         The focus &Rarr; the fine-tuning of a large language model architecture for in-context token classification purposes, i.e., in-context word or string detection & classification; <a href="c-eclectic-model-desc.html">study the model description page</a>.<br><br>
 
